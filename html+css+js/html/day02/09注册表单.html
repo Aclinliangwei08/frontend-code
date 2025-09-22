@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册表单</title>
+</head>
+
+<body>
+    <h1>注册信息</h1>
+    <form>
+        <h2>个人信息</h2>
+       <label> 姓名：</label><input type="text" placeholder="请输入姓名">
+        <br />
+        <br />
+        <label> 密码：</label><input type="password" placeholder="请输入密码">
+        <br />
+        <br />
+        <label> 确认密码：</label><input type="password" placeholder="请输入确认密码">
+        <br />
+        <br />
+        <label> 性别：</label>
+        <label for="male">男</label><input type="radio" name="sex" checked value="male" id="male" />
+        <label for="female">女</label><input type="radio" name="sex" value="female" id="female" />
+        <br />
+        <br />
+        <label> 宜居城市：</label><select>
+            <option>上海</option>
+            <option selected>北京</option>
+            <option>广州</option>
+            <option>深圳</option>
+        </select>
+
+        <h2>教育经历</h2>
+        最高学历：<select>
+            <option>高中</option>
+            <option>大专</option>
+            <option>本科</option>
+            <option>硕士</option>
+            <option selected>博士</option>
+        </select>
+        <br />
+        <br />
+        学校名称：<input type="text" placeholder="请输入学校名称">
+        <br />
+        <br />
+        所学专业：<input type="text" placeholder="请输入专业名称">
+        <br />
+        <br />
+        在校时间：<input type="date">
+        <h2>工作经历</h2>
+        <label> 公司名称：</label><input type="text" placeholder="请输入公司名称">
+        <br />
+        <br />
+        <label> 工作描述：</label>
+        <br/>
+        <textarea rows="5" cols="20"></textarea>
+        <!-- 已阅读并同意 -->
+        <br />
+        <input type="checkbox">我已阅读并同意《用户注册协议》</input>
+        <br />
+        <ul>
+            <li><a href="#">用户注册协议</a></li>
+            <li><a href="#">隐私政策</a></li>
+
+        </ul>
+        <br />
+        <br />
+        <button type="submit">免费注册</button>
+        <button type="reset">重新填写</button>
+    </form>
+
+
+</body>
+
+</html>

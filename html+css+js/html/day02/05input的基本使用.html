@@ -12,8 +12,8 @@
     <br />
     密码框：<input type="password" placeholder="请输入密码" />
     <br />
-    单选框：<input type="radio" name="gender" checked value="male" /> 男
-    <input type="radio" name="gender" value="female" /> 女
+    单选框：<label for="male">男</label><input type="radio" name="gender" checked value="male" id="male" />
+    <label for="female">女</label><input type="radio" name="gender" value="female" id="female" />
     <br />
     复选框：<input type="checkbox" name="hobby" checked value="reading" /> 阅读
     <input type="checkbox" name="hobby" value="traveling" /> 旅游
@@ -31,6 +31,10 @@
     <!-- 文本域标签 -->
     <br />
     <textarea cols="30" rows="5" placeholder="请输入内容"></textarea>
+    <button type="submit">提交</button>
+    <button type="reset">重置</button>
+    <button type="button">取消</button>
+
 
 </body>
 
