@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素选择器</title>
+    <style>
+        div::before {
+            content: "老鼠";
+            color: red;
+        }
+
+        div::after {
+            content: "大米";
+            color: green;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: #ffc0cb;
+        }
+    </style>
+</head>
+
+<body>
+    <div>爱</div>
+</body>
+
+</html>
