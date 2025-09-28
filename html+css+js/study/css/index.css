@@ -1,0 +1,111 @@
+/* 版心居中 */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+.header {
+    height: 100px;
+    background-color: #fff;
+}
+
+.header .wrapper {
+    padding-top: 29px;
+    display: flex;
+
+}
+
+.logo a {
+    display: block;
+    font-size: 0px;
+    width: 195px;
+    height: 41px;
+    background-image: url(../images/logo.png);
+}
+
+.nav {
+    margin-left: 102px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav li {
+    margin-right: 24px;
+}
+
+.nav li a {
+    display: block;
+    padding: 6px 8px;
+    line-height: 27px;
+    font-size: 19px;
+}
+
+.nav li .active,
+.nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+.search {
+    display: flex;
+    margin-left: 64px;
+    padding-left: 19px;
+    padding-right: 12px;
+    width: 412px;
+    height: 40px;
+    background-color: #f3f5f7;
+    border-radius: 20px;
+}
+
+.search input {
+    flex: 1;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+}
+
+.search input::placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+.search a {
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/search.png);
+    /* 侧轴居中 */
+    align-self: center;
+}
+
+.user {
+    margin-left: 32px;
+    margin-top: 4px;
+
+}
+
+.user img{
+    margin-right: 7px;
+    vertical-align: middle;
+}
+
+.user span {
+    line-height: 23px;
+    font-size: 16px;
+    color: #666;
+}
+
+.banner {
+    height: 420px;
+    background-color:  #0092cb;;
+}
+
+.banner .wrapper{
+    height: 420px;
+    background-image: url(../uploads/banner.png);
+    display: flex;
+}
