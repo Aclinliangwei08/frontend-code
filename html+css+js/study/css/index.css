@@ -112,28 +112,28 @@ body {
     justify-content: space-between;
 }
 
-.banner .left{
+.banner .left {
     padding: 3px 20px;
     width: 191px;
     height: 420px;
-    background-color: rgba(0,0,0,0.42);
+    background-color: rgba(0, 0, 0, 0.42);
 }
 
-.banner .left a{
+.banner .left a {
     display: block;
     height: 46px;
-    background: url(../images/right.png) no-repeat right center ;
+    background: url(../images/right.png) no-repeat right center;
     line-height: 46px;
     font-size: 16px;
     color: #fff;
 }
 
-.banner .left a:hover{
+.banner .left a:hover {
     color: #00a4ff;
     background-image: url(../images/right-hover.png);
 }
 
-.banner .right{
+.banner .right {
     margin-top: 60px;
     border-radius: 10px;
     width: 218px;
@@ -141,54 +141,54 @@ body {
     background-color: #209dd5;
 }
 
-.banner .right h3{
-   margin-left: 14px;
-   height: 48px;
-   line-height: 48px;
-   font-size: 15px;
-   color: #fff;
-   font-weight: 400;
+.banner .right h3 {
+    margin-left: 14px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
 }
 
-.banner .right .content{
+.banner .right .content {
     padding: 14px;
     height: 257px;
     background-color: #fff;
     border-radius: 10px;
 }
 
-.banner .right dl{
+.banner .right dl {
     margin-bottom: 12px;
     border-bottom: 1px solid #e0e0e0;
 }
 
-.banner .right dt{
+.banner .right dt {
     margin-bottom: 8px;
     font-size: 14px;
     line-height: 20px;
     font-weight: 700;
 }
 
-.banner .right dd{
+.banner .right dd {
     font-size: 12px;
     line-height: 16px;
     margin-bottom: 8px;
 }
 
-.banner .right dd span{
+.banner .right dd span {
     color: #00a4ff;
 
 }
 
-.banner .right dd strong{
+.banner .right dd strong {
     color: #7d7d7d;
     font-weight: 400;
 }
 
-.banner .right  a{
-    height:32px;
+.banner .right a {
+    height: 32px;
     display: block;
-    background-color: #00a4ff; 
+    background-color: #00a4ff;
     text-align: center;
     line-height: 32px;
     font-size: 14px;
@@ -196,3 +196,63 @@ body {
     border-radius: 15px;
 }
 
+.recommend {
+    height: 60px;
+    padding: 0 20px;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(211, 211, 211, 0.5);
+    margin-top: 11px;
+    line-height: 60px;
+    display: flex;
+}
+
+.recommend ul {
+    flex: 1;
+    display: flex;
+}
+
+.recommend h3 {
+    font-size: 18px;
+    color: #00a4ff;
+    font-weight: 400;
+}
+
+.recommend ul li a {
+    padding: 0 24px;
+    border-right: 1px solid #e0e0e0;
+    font-size: 18px;
+
+}
+
+.recommend ul li:last-child a {
+    border-right: 0;
+}
+
+.recommend .modify {
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+/* 推荐课程 */
+.course {
+    margin-top: 15px;
+}
+
+.hd{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 60px ;
+}
+
+.hd h3 {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.hd .more{
+    padding-right: 20px;
+    font-size: 14px;
+    color: #999;
+    background: url(../images/more.png) no-repeat right center;
+}
