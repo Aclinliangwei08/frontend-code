@@ -238,11 +238,11 @@ body {
     margin-top: 15px;
 }
 
-.hd{
+.hd {
     display: flex;
     justify-content: space-between;
     height: 60px;
-    line-height: 60px ;
+    line-height: 60px;
 }
 
 .hd h3 {
@@ -250,9 +250,68 @@ body {
     font-weight: 400;
 }
 
-.hd .more{
+.hd .more {
     padding-right: 20px;
     font-size: 14px;
     color: #999;
     background: url(../images/more.png) no-repeat right center;
+}
+
+.bd ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bd li {
+    margin-bottom: 14px;
+    width: 228px;
+    height: 271px;
+    background-color: pink;
+}
+
+.bd li .pic {
+    height: 156px;
+}
+
+.bd li .text {
+    padding: 20px;
+    height: 115px;
+    background-color: #fff;
+}
+
+.bd li .text h4 {
+    height: 40px;
+    margin-bottom: 13px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.bd li .text p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+}
+
+.bd li .text p span {
+    color: #fa6400;
+}
+
+.bd li .text p i {
+    /* 不倾斜 */
+    font-style: normal;
+}
+
+.hd ul{
+    display: flex;
+}
+
+.hd ul li{
+    margin-right: 60px;
+    font-size: 16px;
+}
+
+.hd li .active{
+    color: #00a4ff;
 }
