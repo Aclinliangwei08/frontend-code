@@ -42,9 +42,72 @@
     color: #5EB69C;
 }
 
-.header{
+.header {
+    display: flex;
     margin-top: 22px;
     margin-bottom: 22px;
     height: 88px;
-    background-color: pink;
+    /* background-color: pink; */
+}
+
+.logo {
+    width: 200px;
+    height: 88px;
+    background-color: skyblue;
+    margin-right: 40px;
+}
+
+.logo a {
+    font-size: 0;
+    display: block;
+    width: 200px;
+    height: 88px;
+    background-image: url(../images/logo.png);
+}
+
+.nav {
+    margin-top: 33px;
+    margin-right: 28px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav li {
+    margin-right: 47px;
+}
+
+.nav li a {
+    padding-bottom: 10px;
+}
+
+.nav li a:hover {
+    border-bottom: 1px solid #5EB69C;
+    color: #5EB69C;
+}
+
+.search {
+    display: flex;
+    width: 170px;
+    height: 34px;
+    margin-right: 45px;
+    margin-top: 33px;
+    border-bottom: 2px solid #F4F4F4;
+}
+
+.search .iconfont {
+    margin-right: 8px;
+    font-size: 18px;
+    color: #CCC;
+}
+
+.search input {
+    flex: 1;
+    width: 0;
+}
+
+.search input::placeholder {
+    font-size: 16px;
+    color: #CCC;
 }
