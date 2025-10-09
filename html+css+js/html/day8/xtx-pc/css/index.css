@@ -5,13 +5,133 @@
 }
 
 .banner .wrapper {
+    position: relative;
     height: 500px;
     background-color: pink;
+    overflow: hidden;
 }
 
 .banner .pic {
     display: flex;
     width: 3720px;
     /* 隐藏溢出 */
-    overflow: hidden;
 }
+
+.banner .wrapper .subnav {
+    height: 500px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.42);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.subnav li {
+    padding-left: 30px;
+    padding-right: 12px;
+    height: 50px;
+    /* background-color: pink; */
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    cursor: pointer;
+}
+
+.subnav li a {
+    font-size: 14px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.subnav li .classify {
+    font-size: 16px;
+    margin-right: 14px;
+}
+
+.subnav li .iconfont {
+    font-size: 14px;
+}
+
+.subnav li:hover {
+    background-color: #00BE9A;
+}
+
+.banner ol {
+    position: absolute;
+    bottom: 17px;
+    right: 16px;
+    display: flex;
+}
+
+.banner ol li {
+    width: 22px;
+    height: 22px;
+    /* background-color: pink; */
+    border-radius: 50%;
+    margin-right: 8px;
+    cursor: pointer
+}
+
+.banner ol li i {
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 4px auto;
+}
+
+.banner ol li.active i {
+    background-color: #fff;
+}
+
+.banner ol .active {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 42px;
+    /* background-color: pink; */
+}
+
+.title .left {
+    display: flex;
+}
+
+.title .left h3 {
+    margin-right: 35px;
+    font-size: 30px;
+}
+
+.title .left p {
+    align-self: flex-end;
+    color: #A1A1A1; 
+}
+ 
+.title .right .more {
+     line-height: 42px;
+     color: #A1A1A1;   
+}
+
+.title .right .more .iconfont {
+    margin-left: 10px; 
+}
+
+.bd ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bd li {
+    width: 304px ;
+    height: 404px;
+    background-color: #eef9f4;
+}
+
+
