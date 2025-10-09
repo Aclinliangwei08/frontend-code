@@ -1,1 +1,17 @@
 /* 首页内容的样式 */
+.banner {
+    height: 500px;
+    background-color: #F5F5F5;
+}
+
+.banner .wrapper {
+    height: 500px;
+    background-color: pink;
+}
+
+.banner .pic {
+    display: flex;
+    width: 3720px;
+    /* 隐藏溢出 */
+    overflow: hidden;
+}

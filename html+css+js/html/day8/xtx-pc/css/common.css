@@ -116,24 +116,25 @@
     position: relative;
     margin-top: 32px;
 }
+
 .cart .iconfont {
     font-size: 24px;
 }
 
 .cart i {
-     position: absolute;
-     top: 1px;
-     left: 15px;
-     padding: 0 6px; 
-     height: 15px;
-     background-color: #e26237 ;
+    position: absolute;
+    top: 1px;
+    left: 15px;
+    padding: 0 6px;
+    height: 15px;
+    background-color: #e26237;
     border-radius: 8px;
     font-size: 14px;
     color: #FFFEFE;
     line-height: 15px;
 }
 
-.footer{
+.footer {
     height: 580px;
     background-color: #F5F5F5;
 }
@@ -163,7 +164,7 @@
     background-image: url(../images/sprite.png);
 }
 
-.service li p{
+.service li p {
     font-size: 28px;
     color: #333;
     line-height: 58px;
@@ -182,6 +183,70 @@
 }
 
 .help {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
     height: 300px;
-    background-color: pink;
+    /* background-color: pink; */
+}
+
+.help .left {
+    display: flex;
+}
+
+.help .left dl {
+    margin-right: 84px;
+}
+
+.help .left dl:last-child {
+    margin-right: 0;
+}
+
+.help .left dt {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.help .left dd {
+    font-size: 16px;
+    color: #969696;
+    margin-bottom: 10px;
+}
+
+.help .left .iconfont {
+    color: #5EB69C;
+}
+
+.help .right ul {
+    display: flex;
+}
+
+.help .right li:first-child {
+    margin-right: 55px;
+}
+
+.help .right .pic {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.help .right p {
+    color: #969696;
+    text-align: center
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+    margin-bottom: 10px;
+    color: #A1A1A1;
+}
+
+.copyright p a {
+    margin: 0 10px; 
+    color: #A1A1A1;
 }
