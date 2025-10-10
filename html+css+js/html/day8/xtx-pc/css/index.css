@@ -134,4 +134,59 @@
     background-color: #eef9f4;
 }
 
+.bd li .pic {
+    width: 304px;
+    height: 304px; 
+}
+
+.bd li .txt {
+    text-align: center;
+}
+
+.bd li h4 {
+    margin-top: 18px;
+    margin-bottom: 8px; 
+    font-size: 20px ;
+}
+
+.bd li p {
+    font-size: 18px;
+    color: #AA2113;
+}
+
+.bd li p span {
+    margin-left: 3px;
+    font-size: 22px;
+}
+
+.recommend .bd li {
+    background-color: #fff;
+}
+
+.recommend .bd p {
+    color: #A1A1A1;
+}
+
+.brand {
+    margin-top: 60px;
+    height: 468px;
+    background-color: #F5F5F5;
+}
+
+.brand .wrapper {
+    height: 468px;
+    background-color: pink;
+}
+
+.brand .title {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.brand .bottom {
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+}
+
 
