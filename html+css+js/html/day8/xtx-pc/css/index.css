@@ -219,9 +219,64 @@
 
 .fresh .title {
     margin-top: 60px;
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
 }
 
 .title .right {
     display: flex;
 }
+
+.title .right ul {
+    margin-top: 10px;
+    margin-right: 58px;
+    display: flex;
+}
+
+.title .right ul a {
+    display: block;
+    margin-left: 6px;
+    height: 20px;
+    padding: 0 7px;
+    /* background-color: pink; */
+    line-height: 20px; 
+}
+
+.title .right .active{
+    background-color: #00BE9A;
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .left {
+    width: 248px;
+    height: 610px;
+    /* background-color: pink; */
+}
+
+.content .right {
+    width: 968px;
+    height: 610px;
+    /* background-color: pink; */
+}
+
+.content .right ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content .right ul li {
+    padding: 10px 21px 0;
+    width: 242px;
+    height: 305px;
+    border: 2px solid skyblue;
+}
+
+
+
+
+
+
