@@ -272,7 +272,9 @@
     padding: 10px 21px 0;
     width: 242px;
     height: 305px;
-    border: 2px solid skyblue;
+    /* border: 2px solid skyblue; */
+    position: relative;
+    overflow : hidden;
 }
 
 .content .pic {
@@ -292,9 +294,50 @@
 }
 
 .content .price span {
-    margin-left: 3px;
+    margin-left: 5px;
     font-size: 22px;
 }
+
+.content li .cover {
+    position: absolute;
+    bottom: -86px;
+    left: 0;
+    width: 242px;
+    height: 84px;
+    background-color: #00BE9A;
+    text-align: center;
+    padding-top: 15px;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.content li .cover p:nth-child(1) {
+    font-style: 18px;
+}
+
+.content li .cover p:nth-child(2) {
+    width: 120px;
+    height: 1px;
+    background-color: rgba(255,255,255,0.11);
+    margin: 3px auto 6px;
+}
+
+.content li .cover p:nth-child(3){
+    font-size: 13px;
+}
+
+.content li .cover p:nth-child(3) .iconfont {
+    font-size: 14px;
+}
+
+.content .right li:hover .cover {
+    bottom: 0;
+}
+
+.content .right li:hover{
+    border: 2px solid #00be9A;
+}
+
 
 
 
