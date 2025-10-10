@@ -110,16 +110,16 @@
 
 .title .left p {
     align-self: flex-end;
-    color: #A1A1A1; 
+    color: #A1A1A1;
 }
- 
+
 .title .right .more {
-     line-height: 42px;
-     color: #A1A1A1;   
+    line-height: 42px;
+    color: #A1A1A1;
 }
 
 .title .right .more .iconfont {
-    margin-left: 10px; 
+    margin-left: 10px;
 }
 
 .bd ul {
@@ -129,14 +129,14 @@
 }
 
 .bd li {
-    width: 304px ;
+    width: 304px;
     height: 404px;
     background-color: #eef9f4;
 }
 
 .bd li .pic {
     width: 304px;
-    height: 304px; 
+    height: 304px;
 }
 
 .bd li .txt {
@@ -145,8 +145,8 @@
 
 .bd li h4 {
     margin-top: 18px;
-    margin-bottom: 8px; 
-    font-size: 20px ;
+    margin-bottom: 8px;
+    font-size: 20px;
 }
 
 .bd li p {
@@ -175,7 +175,7 @@
 
 .brand .wrapper {
     height: 468px;
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 .brand .title {
@@ -187,6 +187,41 @@
     position: absolute;
     bottom: -25px;
     right: 0;
+    display: flex;
 }
 
+.brand .bottom a {
+    width: 20px;
+    height: 20px;
+    margin-left: 12px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff
+}
 
+.brand .bottom .prev {
+    background-color: #ddd;
+}
+
+.brand .bottom .next {
+    background-color: #00BE9A;
+}
+
+.brand .bd ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand .bd li {
+    width: 244px;
+    height: 306px;
+}
+
+.fresh .title {
+    margin-top: 60px;
+    margin-bottom: 20px ;
+}
+
+.title .right {
+    display: flex;
+}
