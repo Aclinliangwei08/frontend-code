@@ -238,10 +238,10 @@
     height: 20px;
     padding: 0 7px;
     /* background-color: pink; */
-    line-height: 20px; 
+    line-height: 20px;
 }
 
-.title .right .active{
+.title .right .active {
     background-color: #00BE9A;
     color: #fff;
 }
@@ -274,7 +274,7 @@
     height: 305px;
     /* border: 2px solid skyblue; */
     position: relative;
-    overflow : hidden;
+    overflow: hidden;
 }
 
 .content .pic {
@@ -290,7 +290,7 @@
 }
 
 .content .price {
-    color : #Af2f22; 
+    color: #Af2f22;
 }
 
 .content .price span {
@@ -318,11 +318,11 @@
 .content li .cover p:nth-child(2) {
     width: 120px;
     height: 1px;
-    background-color: rgba(255,255,255,0.11);
+    background-color: rgba(255, 255, 255, 0.11);
     margin: 3px auto 6px;
 }
 
-.content li .cover p:nth-child(3){
+.content li .cover p:nth-child(3) {
     font-size: 13px;
 }
 
@@ -334,15 +334,88 @@
     bottom: 0;
 }
 
-.content .right li:hover{
+.content .right li:hover {
     border: 2px solid #00be9A;
 }
 
+.topic {
+    margin-bottom: 40px;
+}
 
+.topic .title {
+    margin-top: 100px;
+    ;
+}
 
+.topic .topic-bd ul {
+    display: flex;
+    justify-content: space-between;
+}
 
+.topic .topic-bd ul li {
+    width: 405px;
+    height: 335px;
+    /* background-color: pink; */
+}
 
+.topic .topic-bd ul li .pic {
+    width: 405px;
+    height: 288px;
+    position: relative;
+}
 
+.topic-bd .txt {
+    display: flex;
+    width: 405px;
+    height: 67px;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+}
 
+.topic-bd .txt .left {
+    display: flex;
+}
 
+.topic-bd .txt .left p {
+    margin-right: 20px;
+}
 
+.topic-bd .txt .left p:nth-child(1) i {
+    color: #AA2113;
+}
+
+.topic-bd .cover {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding: 0 15px;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    width: 405px;
+    height: 90px;
+    background-image: linear-gradient(180deg, rgba(137, 137, 137, 0.00) 0%, rgba(0, 0, 0, 0.90) 100%);
+}
+.topic-bd .cover .left {
+     color: #fff;
+}
+
+.topic-bd .cover .left h4 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.topic-bd .cover .right {
+    padding: 0 7px;
+    height: 25px;
+    background-color: #fff;
+    color: #AA2113;
+    font-size: 15px;
+}
+
+.topic-bd .cover .right span {
+    font-size: 18px;
+}
