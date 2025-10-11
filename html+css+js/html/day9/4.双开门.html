@@ -5,13 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>双开门</title>
     <style>
-        
+        .father {
+            margin: 0 auto;
+            width: 1366px;
+            height: 600px;
+            background-image: url(./images/bg.jpg);
+            display: flex;
+            overflow: hidden;
+        }
+
+        .father .left,
+        .father .right {
+            width: 50%;
+            height: 600px;
+            background-image: url(./images/fm.jpg);
+        }
+
+        .father .right {
+            background-position: right 0;
+        }
+
+        .father:hover .left {
+            transform: translateX(-100%);
+            transition: all 1s;
+
+        }
+
+        .father:hover .right {
+            transform: translateX(100%);
+            transition: all 1s;
+        }
     </style>
 </head>
 <body>
     <div class="father">
-        <div class="left"></div>
-        <div class="right"></div>
+        <div class="left">
+
+        </div>
+        <div class="right">
+
+        </div>
     </div>
 </body>
 </html>
