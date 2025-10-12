@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>动画实现步骤</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      background-color: pink;
+      animation: Change 1s;
+    }
+
+    /* 动画一：宽度从 200 变化到 800 */
+    @keyframes Change {
+      from {
+        width: 200px;
+      }
+      to {
+        width: 800px;
+      }
+    }
+    /* 动画二：尺寸从 200*100 变化到 800*500 */
+    @keyframes change {
+        0% {
+            width: 200px;
+            height: 100px;
+        }
+
+        20% {
+            width: 400px;
+            height: 200px;
+        }
+
+        100% {
+            width: 800px;
+            height: 500px;
+        }
+    }
+
+    /* 使用动画 */
+    
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
