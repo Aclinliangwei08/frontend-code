@@ -36,6 +36,66 @@ header {
   justify-content: space-between;
   padding: 0 0.4rem;
   height: 1.17333333rem;
-  background-color: pink;
   line-height: 1.17333333rem;
+}
+header .icon-left {
+  font-size: 0.58666667rem;
+}
+header h3 {
+  font-size: 0.48rem;
+}
+header .note {
+  font-size: 0.4rem;
+  color: #2CB5A5;
+}
+.banner {
+  margin-top: 0.8rem;
+  margin-bottom: 0.90666667rem;
+  text-align: center;
+}
+.banner img {
+  margin-bottom: 0.48rem;
+  width: 6.4rem;
+  height: 5.49333333rem;
+}
+.banner p {
+  font-size: 0.42666667rem;
+}
+.banner p span {
+  color: #16C2A3;
+}
+.type {
+  padding: 0 0.4rem;
+}
+.type li {
+  margin-bottom: 0.4rem;
+  height: 2.08rem;
+  border: 1px solid #EDEDED;
+  border-radius: 0.10666667rem;
+  padding: 0 0.4rem;
+}
+.type li a {
+  display: flex;
+  height: 2.08rem;
+  align-items: center;
+}
+.type li a img {
+  width: 1.06666667rem;
+  height: 1.06666667rem;
+  margin-right: 0.37333333rem;
+}
+.type li a .txt {
+  flex: 1;
+}
+.type li a .txt h4 {
+  font-size: 0.42666667rem;
+  line-height: 0.64rem;
+  color: #3C3E42;
+}
+.type li a .txt p {
+  font-size: 0.34666667rem;
+  color: #848484;
+}
+.type li a .iconfont {
+  font-size: 0.42666667rem;
 }
