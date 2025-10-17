@@ -80,3 +80,48 @@ header a {
   border-radius: 2.13333333vw;
   object-fit: cover;
 }
+.list {
+  margin-top: 5.33333333vw;
+  padding: 0 4vw;
+}
+.list li {
+  display: flex;
+  margin-bottom: 4.26666667vw;
+  height: 28vw;
+  background-color: #fff;
+  border-radius: 2.66666667vw;
+}
+.list li .pic {
+  margin-right: 5.33333333vw;
+}
+.list li .pic img {
+  width: 28vw;
+  height: 28vw;
+  border-radius: 2.66666667vw;
+}
+.list li .txt a {
+  display: block;
+  font-size: 3.2vw;
+  color: #a1a4b3;
+  line-height: 1.8;
+}
+.list li .txt .more {
+  font-size: 3.73333333vw;
+  color: #333;
+}
+.list li .txt .more .iconfont {
+  font-size: 4.26666667vw;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4.26666667vw;
+}
+.title h4 {
+  font-size: 5.33333333vw;
+}
+.title a {
+  font-size: 3.2vw;
+  color: #A1A4B3;
+  line-height: 4vw;
+}
