@@ -1,0 +1,50 @@
+//out : ../css/
+
+@import "./base.less";
+@vw: 3.75vw;
+
+body {
+    background-color: #f9fafb;
+}
+
+// 头部
+header {
+    padding: 0 (15/@vw);
+    height: (50/@vw);
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+         width: (235/@vw);
+         height: (50/@vw);
+         background-image: url(../assets/head.png);
+         background-size: contain;
+         background-repeat: no-repeat;
+    }
+    a{
+        width: (80/@vw);
+        height: (30/@vw);
+        background-color: #ffe31b;
+        border-radius: (15/@vw);
+        line-height: (30/@vw);
+        text-align: center;
+        font-size: (14/@vw);
+    }
+}
+
+.search {
+    height: (52/@vw);
+    padding: (10/@vw) (15/@vw);
+    // background-color: pink;
+    .txt {
+        height: (32/@vw);
+        background-color: #f2f4f5;
+        border-radius: (16/@vw);
+        text-align: center;
+        line-height: (32/@vw);
+        color: #a1a4b3;
+    }
+}
+
