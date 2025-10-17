@@ -70,3 +70,13 @@ header a {
   line-height: 8.53333333vw;
   color: #a1a4b3;
 }
+.banner {
+  height: 28.8vw;
+  padding: 0 4vw;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2.13333333vw;
+  object-fit: cover;
+}
