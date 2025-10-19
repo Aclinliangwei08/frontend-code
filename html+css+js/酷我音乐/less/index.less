@@ -9,12 +9,16 @@ body {
 
 // 头部
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
     padding: 0 (15/@vw);
     height: (50/@vw);
     background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 
     .left {
          width: (235/@vw);
@@ -35,6 +39,7 @@ header {
 }
 
 .search {
+    margin-top: (50/@vw);
     height: (52/@vw);
     padding: (10/@vw) (15/@vw);
     // background-color: pink;
@@ -107,4 +112,78 @@ header {
             line-height: (15/@vw);
         }
 }
+.recommend {
+    padding: 0 (15/@vw);
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li {
+            margin-bottom: (16/@vw);
+            width: (105/@vw);
+           height: (143/@vw);
+        //    background-color: pink;
+           .pic {
+            position: relative;
+            width: (105/@vw);
+            height: (105/@vw);
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: (10/@vw);
+                object-fit: cover;
+            }
+            .cover {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: (70/@vw);
+                height: (28/@vw);
+                background-color: rgba(0,0,0,0.8);
+                border-radius: 0  (10/@vw) 0 (10/@vw);
+                text-align: center;
+                line-height: (28/@vw);
+                font-size: (14/@vw);
+                color: #fff;
+            }
+           }
+           .txt {
+            font-size: (14/@vw);
+           }
+        }
+    }
+}
+
+.download {
+    position: fixed;
+    left: (15/@vw);
+    bottom: (30/@vw);
+    padding: 0 (10/@vw) 0 (15/@vw); 
+    width : 345/@vw;
+    height : 45/@vw;
+    background-color: #fff;
+    border-radius: (22.5/@vw);
+    display: flex;
+    align-items: center;
+
+    img {
+        width: (36/@vw);
+        height: (36/@vw);
+        margin-right: (10/@vw);
+    }
+    p {
+        flex : 1;
+        font-size: (14/@vw);
+    }
+    span {
+        width: (32/@vw);
+        height: (32/@vw);
+        background-color: #f2f3f5;
+        border-radius: 50%; 
+        text-align: center;
+        line-height: (32/@vw);
+        font-size: (16/@vw);
+    }
+}
+
 
