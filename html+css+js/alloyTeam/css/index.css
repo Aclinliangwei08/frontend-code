@@ -1,0 +1,6 @@
+.bg-body-tertiary {
+  background-color: pink !important;
+}
+.bg-body-tertiary .navbar-collapse {
+  flex-grow: 0;
+}
