@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        display: flex;
+        width: 700px;
+        height: 300px;
+        border-left: 1px solid pink;
+        border-bottom: 1px solid pink;
+        margin: 50px auto;
+        justify-content: space-around;
+        align-items: flex-end;
+        text-align: center;
+      }
+
+      .box > div {
+        display: flex;
+        width: 50px;
+        background-color: pink;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .box div span {
+        margin-top: -20px;
+      }
+
+      .box div h4 {
+        margin-bottom: -35px;
+        width: 70px;
+        margin-left: -10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      let firstSeason = prompt("请输入第一季度的销售额");
+      let secondSeason = prompt("请输入第二季度的销售额");
+      let thirdSeason = prompt("请输入第三季度的销售额");
+      let fourthSeason = prompt("请输入第四季度的销售额");
+      document.write(`<div class="box">
+        <div style="height: ${firstSeason}px;">
+            <span>${firstSeason}</span>
+            <h4>第1季度</h4>
+        </div>
+        <div style="height: ${secondSeason}px;">
+            <span>${secondSeason}</span>
+            <h4>第2季度</h4>
+        </div>
+        <div style="height: 120px;">
+            <span>${thirdSeason}</span>
+            <h4>第3季度</h4>
+        </div>
+        <div style="height: ${fourthSeason}px;">
+            <span>${fourthSeason}</span>
+            <h4>第4季度</h4>
+        </div>
+    </div>`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num = [2, 6, 1, 77, 52, 25, 77];
+      let max = num[0];
+      let min = num[0];
+      for (let i = 1; i < num.length; i++) {
+        if (num[i] > max) {
+          max = num[i];
+        } else if (num[i] < min) {
+          min = num[i];
+        }
+      }
+      document.write("数组元素最大值为：" + max);
+      document.write("<br>数组元素最小值为：" + min);
+    </script>
+  </body>
+</html>
