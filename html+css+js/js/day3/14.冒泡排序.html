@@ -7,17 +7,62 @@
   </head>
   <body>
     <script>
-      let arr = [5, 4, 3, 2, 1];
-      for (let i = 0; i < arr.length - 1; i++) {
-        for (let j = 0; j < arr.length - i - 1; j++) {
-          if (arr[j] > arr[j + 1]) {
-            let temp = arr[j];
-            arr[j] = arr[j + 1];
-            arr[j + 1] = temp;
+      (function () {
+        // 冒泡排序：对数组进行就地升序排序并返回
+        function bubbleSort(arr) {
+          for (let i = 0; i < arr.length - 1; i++) {
+            for (let j = 0; j < arr.length - i - 1; j++) {
+              if (arr[j] > arr[j + 1]) {
+                const temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+              }
+            }
           }
+          return arr;
         }
-      }
-      document.write(arr);
+
+        // 获取要输入的数字个数
+        const numStr = prompt("请输入要排序的数字个数（正整数）：");
+        if (numStr === null) {
+          document.body.innerHTML = "<p>已取消输入。</p>";
+          return;
+        }
+        const num = parseInt(numStr, 10);
+        if (Number.isNaN(num) || num <= 0) {
+          document.body.innerHTML = "<p>输入的个数无效，请刷新重试。</p>";
+          return;
+        }
+
+        // 读取每个数字，做类型校验
+        const arr = [];
+        for (let i = 0; i < num; i++) {
+          const valStr = prompt("请输入第" + (i + 1) + "个数字：");
+          if (valStr === null) {
+            document.body.innerHTML = "<p>已取消输入。</p>";
+            return;
+          }
+          const val = Number(valStr);
+          if (Number.isNaN(val)) {
+            alert("请输入有效的数字");
+            i--; // 重新输入当前项
+            continue;
+          }
+          arr.push(val);
+        }
+
+        // 进行排序并在页面上显示结果（避免使用 document.write）
+        const sorted = bubbleSort(arr.slice());
+        const container = document.createElement("div");
+        container.style.fontFamily = "Arial, sans-serif";
+        container.innerHTML =
+          "\n          <h2>冒泡排序 - 结果</h2>\n          <p><strong>原数组：</strong>" +
+          arr.join(", ") +
+          "</p>\n          <p><strong>升序：</strong>" +
+          sorted.join(", ") +
+          "</p>\n        ";
+        document.body.appendChild(container);
+      })();
     </script>
   </body>
 </html>

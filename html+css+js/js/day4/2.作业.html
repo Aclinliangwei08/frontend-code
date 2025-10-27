@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = prompt("请输入一个正整数：");
+      function getSum(a) {
+        let sum = 0;
+        for (let i = 1; i <= a; i++) {
+          sum += i;
+        }
+        return sum;
+      }
+      document.write(`1到${a}的和是：` + getSum(a));
+    </script>
+  </body>
+</html>
