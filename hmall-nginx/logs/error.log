@@ -1,0 +1,1 @@
+2025/10/25 13:50:28 [error] 7366#0: *2 directory index of "/Users/linliangwei/Desktop/frontend/hmall-nginx/html/hmall-admin/" is forbidden, client: 127.0.0.1, server: localhost, request: "HEAD / HTTP/1.1", host: "localhost:18081"

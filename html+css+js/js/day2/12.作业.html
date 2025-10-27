@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let firstNum = prompt("请输入第一个数字：");
+      let secondNum = prompt("请输入第二个数字：");
+      let char = prompt("请输入一个运算符：");
+      switch (char) {
+        case "+":
+          alert(
+            `${firstNum}${char}${secondNum}等于${
+              Number(firstNum) + Number(secondNum)
+            }`
+          );
+          break;
+        case "-":
+          alert(
+            `${firstNum}${char}${secondNum}等于${
+              Number(firstNum) - Number(secondNum)
+            }`
+          );
+          break;
+        case "*":
+          alert(
+            `${firstNum}${char}${secondNum}等于${
+              Number(firstNum) * Number(secondNum)
+            }`
+          );
+          break;
+        case "/":
+          alert(
+            `${firstNum}${char}${secondNum}等于${
+              Number(firstNum) / Number(secondNum)
+            }`
+          );
+          break;
+        default:
+          alert("你输入的运算符有误");
+      }
+    </script>
+  </body>
+</html>
