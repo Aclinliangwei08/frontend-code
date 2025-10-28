@@ -1,1 +1,89 @@
+# ==============================
+# Java + Spring Boot 项目通用 .gitignore
+# 适配 IntelliJ IDEA / Maven / Gradle
+# ==============================
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# VSCode
+.vscode/
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Logs
+logs/
+*.log
+
+# OS files
 .DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Backup files
+*~
+*.bak
+
+# IntelliJ working dirs
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/shelf/
+.idea/**/dictionaries/
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# Spring Boot DevTools
+.spring-boot-devtools.properties
+
+# Node modules (if front-end mixed)
+node_modules/
+dist/
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# JetBrains HTTP Client
+httpRequests/
+
+# Environment files
+.env
+*.env
+
+# Docker
+*.pid
