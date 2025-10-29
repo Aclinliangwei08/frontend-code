@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let goods = {
+        name: "小米10",
+        num: 24251104102,
+        weight: 200,
+        address: "中国大陆",
+      };
+      document.write(goods.name + "<br/>");
+      document.write(goods.num + "<br/>");
+      document.write(goods.weight + "<br/>");
+      document.write(goods.address + "<br/>");
+      delete goods.address;
+      document.write(goods.address + "<br/>");
+      console.log(goods["name"]);
+    </script>
+  </body>
+</html>
