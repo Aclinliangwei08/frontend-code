@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let randomNumber = Math.floor(Math.random() * 10) + 1;
+      let number = parseInt(alert("请输入一个数字"));
+      while (number !== randomNumber) {
+        if (number > randomNumber) {
+          alert("猜大了，请重新输入");
+        } else {
+          alert("猜小了，请重新输入");
+        }
+        number = parseInt(prompt("请重新输入一个数字"));
+      }
+      alert("恭喜你，猜对了！");
+    </script>
+  </body>
+</html>

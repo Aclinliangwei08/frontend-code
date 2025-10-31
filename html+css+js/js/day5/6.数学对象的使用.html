@@ -11,6 +11,13 @@
       document.write(Math.ceil(3.44) + "<br>");
       document.write(Math.floor(3.44) + "<br>");
       document.write(Math.round(3.5) + "<br>");
+      document.write(Math.max(3, 5, 7, 2, 9) + "<br>");
+      document.write(Math.min(3, 5, 7, 2, 9) + "<br>");
+      document.write(Math.floor(Math.random() * 11) + "<br>");
+      function getRandom(N, M) {
+        return Math.floor(Math.random() * (M - N + 1) + N);
+      }
+      document.write(getRandom(1, 10) + "<br>");
     </script>
   </body>
 </html>
