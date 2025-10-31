@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>年会抽奖</title>
+    <style>
+      .wrapper {
+        width: 840px;
+        height: 420px;
+        background: url(./images/bg01.jpg) no-repeat center / cover;
+        padding: 100px 250px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <strong>传智教育年会抽奖</strong>
+      <h1>一等奖：<span id="one">???</span></h1>
+      <h3>二等奖：<span id="two">???</span></h3>
+      <h5>三等奖：<span id="three">???</span></h5>
+    </div>
+    <script>
+      let arr = [
+        "周杰伦",
+        "林俊杰",
+        "王力宏",
+        "蔡依林",
+        "张惠妹",
+        "李荣浩",
+        "薛之谦",
+        "许嵩",
+        "毛不易",
+        "汪苏泷",
+      ];
+      const one = arr[Math.floor(Math.random() * arr.length)];
+      arr.splice(arr.indexOf(one), 1);
+      document.querySelector("#one").innerHTML = one;
+      const two = arr[Math.floor(Math.random() * arr.length)];
+      arr.splice(arr.indexOf(two), 1);
+      const three = arr[Math.floor(Math.random() * arr.length)];
+      document.querySelector("#two").innerHTML = two;
+      document.querySelector("#three").innerHTML = three;
+    </script>
+  </body>
+</html>

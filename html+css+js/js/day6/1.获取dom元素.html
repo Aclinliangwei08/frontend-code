@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">111</div>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+    </ul>
+    <script>
+      const box = document.querySelector(".box");
+      //   document.write(box.innerHTML);
+      const li = document.querySelector("ul li:first-child");
+      document.write(li.innerHTML);
+      const lis = document.querySelectorAll("ul li");
+    </script>
+  </body>
+</html>

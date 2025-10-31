@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="nva">
+      <li>我的首页</li>
+      <li>产品介绍</li>
+      <li>联系方式</li>
+    </ul>
+    <script>
+      const nva = document.querySelectorAll(".nva li");
+      for(let i=0; i<nva.length; i++){
+        nva[i].style.color = "red";
+        nva[i].style.fontSize = "20px";
+      }
+    </script>
+  </body>
+</html>
