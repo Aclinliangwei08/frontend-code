@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      .box {
+        width: 600px;
+        margin: 50px auto;
+        display: flex;
+        font-size: 25px;
+        line-height: 40px;
+      }
+
+      .qs {
+        width: 450px;
+        height: 40px;
+        color: red;
+      }
+
+      .btns {
+        text-align: center;
+      }
+
+      .btns button {
+        width: 120px;
+        height: 35px;
+        margin: 0 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>随机点名</h2>
+    <div class="box">
+      <span>名字是：</span>
+      <div class="qs">这里显示姓名</div>
+    </div>
+    <div class="btns">
+      <button class="start">开始</button>
+      <button class="end">结束</button>
+    </div>
+
+    <script>
+      // 数据数组
+      const arr = [
+        "李伟兴",
+        "张三",
+        "李四",
+        "王五",
+        "赵六",
+        "田七",
+        "孙八",
+        "周九",
+        "吴十",
+      ];
+
+      const qs = document.querySelector(".qs");
+      const startBtn = document.querySelector(".start");
+      const endBtn = document.querySelector(".end");
+
+      let m;
+      // 开始按钮
+      startBtn.addEventListener("click", function () {
+        // 定时器
+        m = setInterval(() => {
+          // 随机索引
+          const index = Math.floor(Math.random() * arr.length);
+          // 显示姓名
+          qs.innerHTML = arr[index];
+        }, 100);
+      });
+
+      // 结束按钮
+      endBtn.addEventListener("click", function () {
+        // 清除定时器
+        clearInterval(m);
+      });
+    </script>
+  </body>
+</html>
