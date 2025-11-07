@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const o = { uname: "zhangsan", age: 18 };
+      document.write(Object.keys(o)); // uname,age
+      document.write(Object.values(o)); // zhangsan,18
+      const oo = {};
+      Object.assign(oo, o);
+      document.write(JSON.stringify(oo)); // {"uname":"zhangsan","age":18  cgggggggggg
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="father">
+      <div class="son"></div>
+    </div>
+
+    <script>
+      const father = document.querySelector(".father");
+      const son = document.querySelector(".son");
+      document.addEventListener("click", function () {
+        console.log("document click");
+      });
+      father.addEventListener("click", function () {
+        console.log("father click");
+      });
+      son.addEventListener("click", function (e) {
+        console.log("son click");
+        e.stopPropagation();
+      });
+    </script>
+  </body>
+</html>

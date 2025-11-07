@@ -168,19 +168,7 @@
         if (i >= sliderData.length) {
           i = 0;
         }
-        // 2. 切换图片
-        img.src = sliderData[i].url;
-        // 3. 切换标题
-        title.innerHTML = sliderData[i].title;
-        // 4. 切换指示器
-        document
-          .querySelector(".slider-indicator .active")
-          .classList.remove("active");
-        document
-          .querySelectorAll(".slider-indicator li")
-          [i].classList.add("active");
-        // 5. 切换背景颜色
-        footer.style.backgroundColor = sliderData[i].color;
+        toggle();
       });
 
       prev.addEventListener("click", function () {
@@ -188,6 +176,9 @@
         if (i < 0) {
           i = sliderData.length - 1;
         }
+        toggle();
+      });
+      function toggle() {
         // 2. 切换图片
         img.src = sliderData[i].url;
         // 3. 切换标题
@@ -201,6 +192,18 @@
           [i].classList.add("active");
         // 5. 切换背景颜色
         footer.style.backgroundColor = sliderData[i].color;
+      }
+
+      let timer = setInterval(function () {
+        next.click();
+      }, 1000);
+
+      const slider = document.querySelector(".slider");
+      slider.addEventListener("mouseleave", function () {
+        clearInterval(timer);
+        timer = setInterval(function () {
+          next.click();
+        }, 1000);
       });
     </script>
   </body>
